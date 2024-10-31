@@ -35,3 +35,26 @@ void charma(int x_des, int y_des)
     }
 }
 
+void key(unsigned char key, int x, int y) {
+    switch (key) {
+
+    case 'a':
+        cx1 += -0.1f;
+        glutPostRedisplay();
+        break;
+    case 'd':
+        cx1 += 0.1f;
+        glutPostRedisplay();
+        break;
+    case 'w':
+        cx1 += 5.0f;
+        glutPostRedisplay();
+        cx1 += -2.0f;
+        glutPostRedisplay();
+        break;
+
+
+    }
+
+}
+

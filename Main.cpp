@@ -52,28 +52,6 @@ void timer(int value) {
     glutTimerFunc(16, timer, 0); // Aproximadamente 60 FPS
 }
 
-void key(unsigned char key, int x, int y) {
-    switch (key) {
-
-    case 'a':
-        cx1 += -0.1f;
-        glutPostRedisplay();
-        break;
-    case 'd':
-        cx1 += 0.1f;
-        glutPostRedisplay();
-        break;
-    case 'w':
-        cx1 += 5.0f;
-        glutPostRedisplay();
-        cx1 += -2.0f;
-        glutPostRedisplay();
-        break;
-
-
-    }
-
-}
 
 void init() {
     glClearColor(1.0, 1.0, 1.0, 1.0); // Color de fondo negro
